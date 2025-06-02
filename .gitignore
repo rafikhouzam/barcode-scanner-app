@@ -1,0 +1,38 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Old Version
+oldApp.py
+
+# Virtual environment
+.env/
+venv/
+ENV/
+
+# Distribution / packaging
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Ignore everything in .streamlit EXCEPT config.toml
+.streamlit/*
+!.streamlit/config.toml
+
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs and databases
+*.log
+*.sqlite3
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# VSCode settings (if any team members eventually use it)
+.vscode/

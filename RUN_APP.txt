@@ -1,0 +1,67 @@
+🛠️ RFID Product Lookup Tool - Setup & Usage Guide (Windows Only)
+
+📁 Folder Contents:
+- app.py              ← The actual application logic
+- barcode_lookup.parquet      ← The product lookup dataset
+- run_app.bat                 ← Double-click this to launch the app
+- README.txt                  ← You're reading it!
+
+------------------------------------------------------------
+STEP 1: INSTALL PYTHON (REQUIRED ONCE)
+------------------------------------------------------------
+
+1. Go to the official Python download page:
+   https://www.python.org/downloads/
+
+2. Click the yellow "Download Python 3.13.x" button.
+
+3. Run the installer:
+   ✅ Check the box that says "Add Python to PATH"
+   ✅ Click "Customize Installation" and leave all options checked
+   ✅ On the next screen, click "Install"
+
+4. When the installer is done, click "Close".
+
+To confirm Python installed, open Windows PowerShell (search in start menu) and type:
+    python --version
+You should see something like: Python 3.13.x
+
+------------------------------------------------------------
+STEP 2: INSTALL DEPENDENCIES (REQUIRED ONCE)
+------------------------------------------------------------
+
+1. Open PowerShell
+
+2. Run the following command exactly:
+    pip install streamlit pandas pyarrow
+
+This will take a minute or two. You only need to do this once.
+
+------------------------------------------------------------
+STEP 3: RUN THE APP (EVERY TIME)
+------------------------------------------------------------
+
+1. Double-click the file called:
+    run_app.bat
+
+2. The app will open in your browser (usually at http://localhost:8501)
+
+3. Scan an RFID tag and the product details will appear instantly.
+
+------------------------------------------------------------
+💡 TROUBLESHOOTING / FAQ
+------------------------------------------------------------
+
+Q: I see a black window open and close instantly.
+A: Run run_app.bat from PowerShell to see any errors. Or follow Steps 1–2 above again carefully.
+
+Q: Nothing happens when I scan.
+A: Make sure the RFID scanner is connected and functional. The scanned value must match the barcode in the dataset.
+
+Q: I don’t want to install anything myself.
+A: Contact IT and ask them to set up Python and Streamlit using this README. After setup, you’ll only need to double-click run_app.bat.
+
+------------------------------------------------------------
+🧑‍💼 Created By:
+[Your Name]
+Data Team, Aneri Jewels 💎

@@ -1,0 +1,63 @@
+Barcode Scanner App – Installation Guide
+========================================
+
+This guide walks you through setting up and running the Barcode Scanner App on your computer.
+
+🛠 Prerequisite: Install Git
+----------------------------
+
+1. Go to https://git-scm.com/downloads
+2. Download and run the installer for Windows
+3. Keep clicking "Next" through the setup (default options are fine)
+4. After install, open Command Prompt or PowerShell and type:
+
+   git --version
+
+   If it prints a version number, you're good to go.
+
+🚀 Quick Setup Steps
+--------------------
+
+1. Open PowerShell
+   Type `powershell`, and hit Enter.
+
+2. Clone the Project from GitHub
+
+   cd Downloads
+   git clone https://github.com/rafikhouzam/barcode-scanner-app.git
+   cd barcode-scanner-app
+
+3. Run the App
+
+   Double-click the `run_app.bat` file inside the `barcode-scanner-app` folder.
+
+   This will:
+   - Automatically activate the environment
+   - Launch the Streamlit app in your browser
+
+🔁 Updating the App (Future Changes)
+-----------------------------------
+
+Any time there's an update, just open Command Prompt and run:
+
+   cd Downloads\\barcode-scanner-app
+   git pull
+
+This will fetch the latest changes.
+
+🛠 Requirements
+---------------
+
+- Python 3.13+
+- Git installed (https://git-scm.com/)
+- All dependencies are included in `requirements.txt` (you probably won’t need to touch it)
+
+❓ Troubleshooting
+------------------
+
+- If Windows gives you a “protected your PC” warning on the `.bat` file, click **More Info → Run Anyway**
+- Make sure Python and Git are installed and added to PATH
+- If the app doesn't open: try running `streamlit run app.py` manually from the command line
+
+Made with 💻 by Aneri Tech Team
+"""
