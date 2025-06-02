@@ -1,9 +1,11 @@
 # core/lookup.py
+import pandas as pd
 
 def load_lookup_df(unit):
-    import pandas as pd
-    if unit == "Aneri Jewels" or unit == "EDB":
-        return pd.read_parquet("barcode_lookup.parquet")
+    if unit == "Aneri Jewels":
+        return pd.read_parquet("barcode_lookup_SUMIT.parquet")
+    elif unit == "EDB":
+        return pd.read_parquet("barcode_lookup_EDB.parquet")
     return pd.DataFrame()
 
 def lookup_barcode(bc, lookup_df, comment):
