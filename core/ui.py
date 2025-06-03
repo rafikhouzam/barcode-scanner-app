@@ -5,7 +5,6 @@ from core.handlers import handle_scan
 from core.session import init_session_state, load_session, save_session, clear_session_file
 import pandas as pd
 
-
 def render_inputs(session):
     customer = st.text_input("Customer Name", value=session["customer_name"])
     meeting_desc = st.text_input("Meeting Description", key="meeting_description", value=session.get("meeting_description", ""))
