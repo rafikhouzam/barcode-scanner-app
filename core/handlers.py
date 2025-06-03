@@ -3,7 +3,9 @@ from core.lookup import lookup_barcode
 
 def handle_scan(session, lookup_df):
     bc = st.session_state.get("barcode_input", "").strip()
-    comment = st.session_state.get("comment_input", "")
+
+    comment_key = st.session_state.get("comment_key", "comment_input")
+    comment = st.session_state.get(comment_key, "").strip()
 
     if not bc:
         return

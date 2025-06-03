@@ -19,7 +19,7 @@ def render_inputs(session):
     return customer, meeting_desc, executive
 
 def render_comment_input():
-    return st.text_input("Comment (Optional)", key=st.session_state["comment_key"])
+    return st.text_input("Comment (Optional)", key=st.session_state.get("comment_key", "comment_input"))
 
 def render_barcode_input(on_change=None):
     return st.text_input(
@@ -89,7 +89,7 @@ def render_scanned_items(session):
             col2.markdown(item["style_cd"])
             col3.markdown(item["description"])
             col4.markdown(item["category"])
-            col5.markdown(item["comment"] or "No comment")
+            col5.markdown(item["comment"])
             if col6.button("\u274c", key=f"remove_{i}"):
                 session["scanned_items"].pop(i)
                 from core.session import save_session
