@@ -37,3 +37,5 @@ data/*
 
 # VSCode settings (if any team members eventually use it)
 .vscode/
+
+utils/
